@@ -1,0 +1,24 @@
+<div class="contenido">
+
+    <form action="/admin/productos/editar" method="post">
+
+        <h3>Editar un Productos</h3>
+
+        <input type="hidden" name="id" value="{{data.id}}" id="inputId"/>
+
+        <input type="text" name="titulo" id="inputTitulo" value="{{data.titulo}}" placeholder="Coloque el nuevo Titulo" />
+
+        <input type="text" name="imagen" id="inputImagen" value="{{data.imagen}}" placeholder="Coloque la nueva Imagen" />
+
+        <input type="text" name="precio" id="inputPrecio" value="{{data.precio}}" placeholder="Coloque el nuevo Precio" />
+
+        <button type="submit">
+            <p>Editar</p>
+        </button>
+
+    </form>
+    {{#if error}}
+        <p>{{message}}</p>
+    {{/if}}
+
+</div>

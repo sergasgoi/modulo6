@@ -1,0 +1,22 @@
+<div class="contenido">
+
+    <form action="/admin/productos/agregar" method="post">
+
+        <h3>Agregar un Productos</h3>
+
+        <input type="text" name="titulo" id="inputTitulo" placeholder="Escriba el Titulo" />
+
+        <input type="text" name="imagen" id="inputImagen" placeholder="Escriba la Imagen" />
+
+        <input type="text" name="precio" id="inputPrecio" placeholder="Escriba el Precio" />
+
+        <button type="submit">
+            <p>Agregar</p>
+        </button>
+
+    </form>
+    {{#if error}}
+        <p>{{message}}</p>
+    {{/if}}
+
+</div>
